@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-4" *ngFor="let pokemon of Pokemons.results">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title">{{pokemon.name}}</h5>
+                  <p class="card-text">{{pokemon.url}}</p>
+                  <a class="btn btn-primary" (click)="showPoke(pokemon.name)">Definición</a>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>
